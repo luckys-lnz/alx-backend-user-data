@@ -32,18 +32,7 @@ class DB:
         return self.__session
 
     def add_user(self, email: str, hashed_password: str) -> User:
-        """
-        Add a new user to the database.
-
-        Args:
-            email (str): The user's email address.
-            hashed_password (str): The user's hashed password.
-
-        Returns:
-            User: The created User object.
-
-        Raises:
-            ValueError: If an error occurs while adding the user.
+        """Add a new user to the database.
         """
         try:
             new_user = User(email=email, hashed_password=hashed_password)
