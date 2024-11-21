@@ -144,9 +144,6 @@ class Auth:
 
         Returns:
             str: The reset token.
-
-        Raises:
-            ValueError: If the user does not exist.
         """
         user = None
         try:
